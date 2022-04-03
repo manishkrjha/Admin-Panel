@@ -2,11 +2,11 @@ import client from "./client";
 
 export const getPosts = async (pageNo, limit) => {
     try{
-        const { data } = await client(`/post/posts?pageNo=${pageNo}&limit=${limit}`);
+        const { data } = await client(`/blogPost/posts?pageNo=${pageNo}&limit=${limit}`);
 
         //ISSUE: Displays no data
-        {console.log('Get post data: ')}
-        {console.log(data)}
+        // {console.log('Get post data: ')}
+        // {console.log(data)}
 
 
         return data;
